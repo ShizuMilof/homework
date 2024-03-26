@@ -78,6 +78,7 @@ header {
 
 .navigation li {
   margin-left: 1em;
+  font-size: 1.5rem;
 }
 
 .navigation li:hover {
@@ -722,6 +723,32 @@ input[type="range"]:focus {
 
 .backcolor {
   background-color: #EFF3F5;
+}
+
+.grid input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: none;
+  padding-left: 0.5em;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  height: 2.5rem;
+}
+
+.grid select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: none;
+  padding-left: 0.5em;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1em;
+  height: 2.5rem;
+  cursor: pointer;
 }
 
 /* this is a workaround for a Chrome bug that disallows display:grid on fieldset elements */
