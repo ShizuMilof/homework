@@ -10,6 +10,7 @@
     .sample-frame-2 {
       box-sizing: border-box;
       background-color: rgb(224, 230, 212);
+      margin: 0 auto; /* Moved inline style here */
     }
 
     .sample-frame-1 {
@@ -68,7 +69,7 @@
   <main>
     <section class="cart-section">
       <div class="cart-preview">
-        <div class="cart-left"><a href="framing.html"><img class="sample-frame-1" style="margin: 0 auto;"
+        <div class="cart-left"><a href="framing.html"><img class="sample-frame-1"
               src="met-objects/DT3077.jpg" width="199" height="249" alt="Portrait of a Young Man"></a></div>
         <div class="cart-right"><span class="artist">Hans Memling</span><br>
           <span class="image-title">Portrait of a young man, </span>
@@ -79,7 +80,7 @@
         </div>
       </div>
       <div class="cart-preview">
-        <div class="cart-left"><a href="framing.html"><img class="sample-frame-2" style="margin: 0 auto;"
+        <div class="cart-left"><a href="framing.html"><img class="sample-frame-2"
               src="met-objects/DT1567.jpg" width="250" height="207" alt="Wheat Field with Cypresses">
           </a></div>
         <div class="cart-right"><span class="artist">Vincent van Gogh</span><br>
@@ -92,7 +93,8 @@
       <div class="checkout-form-div">
         <p class="checkout-total">Total: € 201.70</p>
         <form class="checkout-form">
-          <input type="submit" value="Checkout">
+          <label for="checkout-button" class="visually-hidden">Checkout</label>
+          <button id="checkout-button" type="submit">Checkout</button>
         </form>
       </div>
     </section>
