@@ -734,8 +734,8 @@ input[type="range"]:focus {
   margin: 0;
   font-family: inherit;
   font-size: 1em;
-  height: 2.5rem;
   cursor: pointer;
+  height: 2.5rem;
 }
 
 .grid select {
