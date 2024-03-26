@@ -1,27 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="style.css">
   <style>
-    .sample-frame-1 {
+    .sample-frame-1, .sample-frame-2 {
       box-sizing: border-box;
+      background-color: rgb(224, 230, 212);
+    }
+    .sample-frame-1 {
       border-image-source: url(frame-styles/classic.jpg) !important;
       border-image-slice: 115 !important;
       border-width: 32px !important;
-      background-color: rgb(224, 230, 212);
       padding: 0px !important;
     }
-
     .sample-frame-2 {
-      box-sizing: border-box;
       border-image-source: url(frame-styles/natural.jpg) !important;
       border-image-slice: 75 !important;
       border-width: 16px !important;
-      background-color: rgb(224, 230, 212);
       padding: 8px !important;
     }
+    /* Move inline styles here */
   </style>
   <title>Cart | Artmart</title>
 </head>
@@ -33,17 +34,16 @@
         <img src="artmart_logo.png" alt="Artmart" class="logo">
       </a>
       <ul class="navigation">
-        <a href="search.html" style="margin-left: 1em; text-decoration: none; color: #2B2E22;">
-          <li>Search</li>
-        </a>
-        <a href="cart.html" style="margin-left: 1em; text-decoration: none; color: #2B2E22;"></a>
-        <li>Cart (2)</li></a>
+        <li><a href="search.html" style="text-decoration: none; color: #2B2E22;">Search</a></li>
+        <li><a href="cart.html" style="text-decoration: none; color: #2B2E22;">Cart (2)</a></li>
+        <!-- Corrected structure -->
       </ul>
     </div>
   </header>
 
   <main>
     <section class="cart-section">
+      
       <div class="cart-preview">
         <div class="cart-left"><a href="framing.html"><img class="sample-frame-1" style="margin: 0 auto;"
               src="met-objects/DT3077.jpg" width="199" height="249" alt="Portrait of a Young Man"></a></div>
